@@ -1,0 +1,87 @@
+/* Universal Styles */
+
+html {
+  font-size: 18px;
+  font-family: Helvetica !important;
+}
+
+body {
+  width: 100%;
+}
+
+.main_body {
+  width: 960px;
+}
+
+/* Header Styles */
+
+header {
+  background-color: black;
+  width: 100%;
+}
+
+.logo_container {
+  display: flex;
+  align-content: center;
+}
+
+.logo_container img {
+  height: 1.5rem;
+  margin: 0 0.5rem;
+  padding-top: 0.33rem;
+}
+
+.logo_container h2 {
+  color: white;
+  font-size: 1rem;
+  padding: 0.66rem;
+}
+
+/* Main Banner Styles */
+
+.main_banner {
+  height: 25rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  display: flex;
+}
+
+.arrival_box {
+  width: 20rem;
+  background-color: black;
+  color: white;
+  margin-top: 9rem;
+  height: 11.5rem;
+}
+
+.arrival_box h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+
+.arrival_box h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+/* Nav Styles */
+
+nav {
+  height: 2.5rem;
+  background-color: firebrick;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+li {
+  color: white;
+}
