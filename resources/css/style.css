@@ -3,10 +3,11 @@
 html {
   font-size: 18px;
   font-family: Helvetica;
+  width: 100%
 }
 
 body {
-  width: 1240px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -45,6 +46,9 @@ header {
 .main_banner {
   height: 25rem;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
 }
 
@@ -78,9 +82,16 @@ nav {
   background-color: firebrick;
 }
 
-.navigation {
+.full_navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.menu_navigation {
+  display: flex;
+  justify-content: center;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
@@ -154,4 +165,106 @@ footer {
 
 .footer_text {
   padding: 2rem 0 2rem 0;
+}
+
+/*Tablet Media Query*/
+
+@media only screen and (max-width: 1024px) {
+  .product_grid {
+    justify-content: space-between;
+  }
+
+  .product_container {
+    width: 47%;
+
+  }
+  #glasses {
+    display: none;
+  }
+
+  .full_navigation {
+    display: none;
+  }
+  .arrival_box h3 {
+    font-size: 0.75rem;
+  }
+  .arrival_box h1 {
+    font-size: 1.5rem;
+  }
+  .location_container {
+    width: 35%;
+  }
+}
+
+/*Full Web Browser Media Query*/
+
+@media only screen and (min-width: 1024px) {
+  .menu_navigation {
+    display: none;
+  }
+}
+
+/*Phone Screen Media Query*/
+@media only screen and (max-width: 470px) {
+  .main_body {
+    width: 470px;
+  }
+
+  .main_banner {
+    height: 15rem;
+    width: auto;
+  }
+
+  .arrival_box {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 4.8rem;
+  }
+
+  .arrival_box h3 {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.77rem;
+
+  }
+  .arrival_box h1 {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    font-size: 1rem;
+  }
+  #watch {
+    display: none;
+  }
+
+  .product_grid {
+    justify-content: center;
+  }
+
+  #pen {
+    width: 90%;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .location_container {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
 }
